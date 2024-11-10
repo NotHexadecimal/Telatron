@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+body {
+  margin: 0;
+  background: #0002;
+  user-select: none;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+h1   {
+  width: fit-content;
+  margin: 30px auto 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+  width: fit-content;
+  margin: 5px auto 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.frame {
+  width: fit-content;
+  margin: auto;
+  margin-top: 30px;
+  border: solid 30px #111;
+  box-shadow: -20px 20px 20px #0005;
+}
+
+.mat {
+  position: relative;
+  background: #fff;
+  width: fit-content;
+  padding: 120px;
+  box-shadow: inset -10px 10px 10px #0005, inset 0 0 5px #0009;
+}
+
+.mat::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 500px;
+  width: 500px;
+  top: 120px;
+  box-shadow: inset -7px 7px 7px #0003, inset 0 0 5px #0003;
+}
+
+.controls {
+  margin: auto;
+  width: fit-content;
+}
+
+.controls * {
+  display: inline-block;
+  margin: 70px 5px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  box-shadow: -3px 3px 3px #0005;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+.controls button {
+  cursor: pointer;
+}
