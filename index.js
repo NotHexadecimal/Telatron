@@ -15,8 +15,8 @@ const ctx = canvas.getContext('2d');
 const epsilon = 1e-5;
 
 // --- Seedable rng ---
-var hash = (n) => Math.imul(n, 2654435761) >>> 0;
-var prngInit = (seed) => {
+const hash = (n) => Math.imul(n, 2654435761) >>> 0;
+const prngInit = (seed) => {
   let n = hash(seed);
   return () => ((n = (16807 * n) % 2147483647)) / 2147483647;
 };
